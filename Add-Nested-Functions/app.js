@@ -23,6 +23,18 @@ function add(...args){
   return fxn;
 }
 
+function addNormalize(arr, sum=0, depth=1) {
+  for(let i=0; i< arr.length; i++) {
+      const cur = arr[i];
+      if (Array.isArray(cur)) {
+          sum += addNormalize(cur, sum, depth+1);
+      } else {
+          sum+=cur * depth;
+      }
+  }
+  return sum;
+}
+
 
 
 console.log(add(2,3,9));
