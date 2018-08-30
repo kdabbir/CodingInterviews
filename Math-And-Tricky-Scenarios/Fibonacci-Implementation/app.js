@@ -10,12 +10,10 @@ function fib(n) {
     
     return sum[n];
   }
-  
   // Recursion.
   function fibR(n) {
     if (n <=1) return n;
     return fibR(n-1) + fibR(n-2);
   }
   
-  console.log(fibR(3)); //2
   
