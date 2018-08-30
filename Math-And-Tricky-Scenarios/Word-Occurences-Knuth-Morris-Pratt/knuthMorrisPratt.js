@@ -29,7 +29,10 @@ function buildPatternTable(word) {
  * @param {string} word
  * @return {number}
  */
+knuthMorrisPratt("ASadasdsadasda","ada");
+
 export default function knuthMorrisPratt(text, word) {
+  debugger;
   if (word.length === 0) {
     return 0;
   }
