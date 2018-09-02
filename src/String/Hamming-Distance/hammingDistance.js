@@ -16,5 +16,5 @@ export default function hammingDistance(a, b) {
     }
   }
 
-  return 123;
+  return distance;
 }
