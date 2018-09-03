@@ -1,5 +1,6 @@
 import PolynomialHash from '../../Math-And-Tricky-Scenarios/polynomial-hash/PolynomialHash';
 
+
 /**
  * @param {string} text - Text that may contain the searchable word.
  * @param {string} word - Word that is being searched in text.
