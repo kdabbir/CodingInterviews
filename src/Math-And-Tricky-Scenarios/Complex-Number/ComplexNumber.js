@@ -1,4 +1,4 @@
-import radianToDegree from '../radian/radianToDegree';
+import radianToDegree from '../Radian-Degree-Conversion/radianToDegree';
 
 export default class ComplexNumber {
   /**
