@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>repl.it</title>
+        <script src="index.js"></script>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        <style>
+        .imgPointer{
+            cursor:pointer;
+        }
+        .tooltip{
+            display: inline;
+            color:black;
+            position: relative;
+            top:200px;
+        }
+
+        .tooltip:hover:after{
+            background: grey;
+            border-radius: 5px;
+            color: #fff;
+            content: attr(title);
+            left: 20%;
+            padding: 5px 15px;
+            position: absolute;
+            top: -73px;
+            width: 163px;
+        }
+
+        .tooltip:hover:before{
+            border:solid;
+            border-color: #333 transparent;
+            border-width: 6px 6px 0px 6px;
+            bottom: 20px;
+            content: "";
+            left: 50%;
+            position: absolute;
+            z-index: 99;
+        }
+        .tooltip-section{
+            display : inline-block;
+            text-align: center;
+            left: 50px  ;
+        }
+</style>
+    </head>
+    <body>
+    <section class="tooltip-section">
+        <img class="imgPointer" src="https://www.w3schools.com/tags/smiley.gif"/>
+        <span>Kousthubha Dabbir</span>
+        <a href="#" title="This is some information for our tooltip." class="tooltip"><span title="More">Linkedin Profile</span></a>
+    </section>
+    </body>
+</html>
