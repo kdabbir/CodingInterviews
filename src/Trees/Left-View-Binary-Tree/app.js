@@ -39,11 +39,3 @@ const tree = {"val":3,"right":{"val":20,"right":{"val":7,"right":null,"left":nul
 let dupTree= Object.assign({},tree);
 console.log(dupTree);
 console.log(leftViewBST(tree, iteratorFn));
-
-//     3 --> 1
-//    / \
-//   9  20 --> 2
-//     /  \
-//    15   7 --> 3
-
-// https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
