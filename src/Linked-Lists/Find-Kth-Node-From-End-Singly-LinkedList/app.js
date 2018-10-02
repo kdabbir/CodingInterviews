@@ -11,8 +11,7 @@ const findKthNode = (ll, number) => {
   let curr = ll.head;
   let count = 1;
   let kthNode;
-  while(curr)
-  {
+  while(curr){
     if(count === number) kthNode = ll.head;
     if(count - number > 0)  kthNode  = kthNode.next;
     curr = curr.next;
@@ -21,4 +20,4 @@ const findKthNode = (ll, number) => {
   return kthNode;
 };
 
-console.log(findKthNode(LL,3));
+console.log(findKthNode(LL,1));
