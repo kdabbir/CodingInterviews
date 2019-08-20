@@ -1,4 +1,19 @@
+/**
+ * @typedef {Object} Callbacks
+ *
+ * @property {function(vertices: Object): boolean} [allowTraversal] -
+ *  Determines whether DFS should traverse from the vertex to its neighbor
+ *  (along the edge). By default prohibits visiting the same vertex again.
+ *
+ * @property {function(vertices: Object)} [enterVertex] - Called when DFS enters the vertex.
+ *
+ * @property {function(vertices: Object)} [leaveVertex] - Called when DFS leaves the vertex.
+ */
 
+/**
+ * @param {Callbacks} [callbacks]
+ * @returns {Callbacks}
+ */
 function initCallbacks(callbacks = {}) {
   const initiatedCallback = callbacks;
 
