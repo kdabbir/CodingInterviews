@@ -1,6 +1,9 @@
 import PriorityQueue from '../../../data-structures/priority-queue/PriorityQueue';
 
-
+/**
+ * @param {Graph} graph
+ * @param {GraphVertex} startVertex
+ */
 export default function dijkstra(graph, startVertex) {
   const distances = {};
   const visitedVertices = {};
