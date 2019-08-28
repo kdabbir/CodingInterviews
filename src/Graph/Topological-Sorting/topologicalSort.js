@@ -1,6 +1,9 @@
 import Stack from '../../../data-structures/stack/Stack';
 import depthFirstSearch from '../depth-first-search/depthFirstSearch';
 
+/**
+ * @param {Graph} graph
+ */
 export default function topologicalSort(graph) {
   // Create a set of all vertices we want to visit.
   const unvisitedSet = {};
