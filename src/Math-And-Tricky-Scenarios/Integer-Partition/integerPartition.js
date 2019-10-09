@@ -1,3 +1,7 @@
+/**
+ * @param {number} number
+ * @return {number}
+ */
 export default function integerPartition(number) {
   // Create partition matrix for solving this task using Dynamic Programming.
   const partitionMatrix = Array(number + 1).fill(null).map(() => {
