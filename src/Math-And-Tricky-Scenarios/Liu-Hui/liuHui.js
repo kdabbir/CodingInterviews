@@ -4,6 +4,11 @@
  */
 const circleRadius = 1;
 
+/**
+ * @param {number} sideLength
+ * @param {number} splitCounter
+ * @return {number}
+ */
 function getNGonSideLength(sideLength, splitCounter) {
   if (splitCounter <= 0) {
     return sideLength;
