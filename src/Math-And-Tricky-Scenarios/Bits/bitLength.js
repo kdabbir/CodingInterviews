@@ -1,3 +1,9 @@
+/**
+ * Return the number of bits used in the binary representation of the number.
+ *
+ * @param {number} number
+ * @return {number}
+ */
 export default function bitLength(number) {
   let bitsCounter = 0;
 
