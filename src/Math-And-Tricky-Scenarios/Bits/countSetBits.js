@@ -1,4 +1,7 @@
-
+/**
+ * @param {number} originalNumber
+ * @return {number}
+ */
 export default function countSetBits(originalNumber) {
   let setBitsCount = 0;
   let number = originalNumber;
