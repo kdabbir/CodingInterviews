@@ -1,5 +1,39 @@
 import getBit from './getBit';
 
+/**
+ * Add two numbers using only binary operators.
+ *
+ * This is an implementation of full adders logic circuit.
+ * https://en.wikipedia.org/wiki/Adder_(electronics)
+ * Inspired by: https://www.youtube.com/watch?v=wvJc9CZcvBc
+ *
+ * Table(1)
+ *  INPUT  | OUT
+ *  C Ai Bi | C Si | Row
+ * -------- | -----| ---
+ *  0  0  0 | 0  0 | 1
+ *  0  0  1 | 0  1 | 2
+ *  0  1  0 | 0  1 | 3
+ *  0  1  1 | 1  0 | 4
+ * -------- | ---- | --
+ *  1  0  0 | 0  1 | 5
+ *  1  0  1 | 1  0 | 6
+ *  1  1  0 | 1  0 | 7
+ *  1  1  1 | 1  1 | 8
+ * ---------------------
+ *
+ * Legend:
+ * INPUT C = Carry in, from the previous less-significant stage
+ * INPUT Ai = ith bit of Number A
+ * INPUT Bi = ith bit of Number B
+ * OUT C = Carry out to the next most-significant stage
+ * OUT Si = Bit Sum, ith least significant bit of the result
+ *
+ *
+ * @param {number} a
+ * @param {number} b
+ * @return {number}
+ */
 export default function fullAdder(a, b) {
   let result = 0;
   let carry = 0;
