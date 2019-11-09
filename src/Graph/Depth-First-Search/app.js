@@ -35,7 +35,7 @@ function DFSVisit(startNode,  targetValue){
     let queue = [startNode];
     startNode.setState(stateEnum.VISITING);
     while(queue.length){
-      let currNode = queue.pop();
+      let currNode = queue.shift();
       if(currNode.value == targetValue) return true;
       let neighborsList = currNode.getNeighbors();
       neighborsList.forEach(neighborNode => {
