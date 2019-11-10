@@ -1,4 +1,12 @@
-
+// Complete the function that takes an integer as its argument and returns the encoded string in base 7 using the following encoding rule: 
+// base 10: 0 1 2 3 4 5 6 
+// base 7: 0 1 2 3 4 5 6 
+// Sample Input 1: 7
+// Sample Output 1: i1  
+/**
+ * @param {integer} input
+ * @return {string}
+ */
 var encodeInBase7 = function(input) {
   if(!input) return '0';  
   let ruleSet = ['0','1','2','3','4','5','6'];
