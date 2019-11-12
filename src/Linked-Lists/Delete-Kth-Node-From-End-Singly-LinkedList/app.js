@@ -1,9 +1,14 @@
 
+
 var LL = {head:{value:2,next:{value:3,next:{value:4,next:null}}}};
 
 function LinkedList(){
   this.head = null;
 }
+
+//Logic is: Kth Node from end = (N-K+1)th from start,where N - Last Node, K - Kth node from end
+//Iterate LL till you reach kth index and mark it as head of ll, so we can start this index from start of LL.
+//Mark previous and kth Node, iterating through the LL & when it reaches end, thats when you've landed at Kth Node.
 function deleteKthFromEnd(sll, k){
   var node = sll.head,
       i = 1,
@@ -29,4 +34,4 @@ function deleteKthFromEnd(sll, k){
   }
   return sll;
 }
-console.log(deleteKthFromEnd(LL,3));
+console.log(deleteKthFromEnd(LL,1));
